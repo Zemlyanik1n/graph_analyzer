@@ -18,12 +18,12 @@ namespace Analyzer
         public static List<string> Cnts = new List<string>();
         public static List<string> CntsType = new List<string>();
         public static List<string> CntsView = new List<string>();
-        public static Dictionary<string, string> Idens = new Dictionary<string, string>(); // словари для проверки (можно заменить на листы)
+        public static Dictionary<string, string> Idens = new Dictionary<string, string>(); // словари для проверки 
         public static Dictionary<string, string> IdensMassive = new Dictionary<string, string>();
         public static Dictionary<string, string> IdensIndex = new Dictionary<string, string>();
         public static Dictionary<string, string> IdensVar = new Dictionary<string, string>();
         private enum States {S, A1, A2, A3, B0, B, C0, C1, C2, D0, D1, D2, D3, E, F}
-        public static bool Check(string str, out string message, out int i) // проверка принадлежност строки
+        public static bool Check(string str, out string message, out int i) // проверка принадлежностu строки
         {
             Idens.Clear(); // очистка статик списоков при обновлении строки
             Ids.Clear();
